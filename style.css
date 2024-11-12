@@ -1,0 +1,73 @@
+* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00274d;
+    margin: 200px;
+}
+
+.quiz-container {
+    background-color: white;
+    width: 50%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.quiz {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+}
+
+.nextBtn {
+    background: white;
+    color: #00274d;
+    font-weight: 500;
+    width: 90%;
+    border: 1px solid #00274d;
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(85, 153, 199);
+    color: rgb(7, 7, 7);
+}
+
+/* New styling for quiz options */
+.quiz-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 20px; /* Adds space between the options */
+    margin-top: 20px;
+}
+
+.quiz-options input[type="radio"],
+.quiz-options button {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Makes buttons/input fill the column width */
+}
+
+.quiz-options input[type="radio"]:checked,
+.quiz-options button:hover {
+    background-color: rgb(85, 153, 199);
+    color: #fff;
+}
+
